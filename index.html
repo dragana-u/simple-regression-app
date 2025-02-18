@@ -60,7 +60,7 @@
             const x = document.getElementById("x_values").value.trim().split(" ").map(Number);
             const y = document.getElementById("y_values").value.trim().split(" ").map(Number);
 
-            const response = await fetch("", {
+            const response = await fetch("https://simple-regression-app.onrender.com/regression", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ x, y })
